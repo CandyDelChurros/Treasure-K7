@@ -1,0 +1,102 @@
+* {
+    border:0;
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Poppins", sans-serif;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+}
+.container {
+    margin: 0 auto;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "header" 
+    "main"
+    "footer";
+    grid-template-rows: 80rem 1fr 10rem;
+}
+
+header {
+    grid-area: header;
+    border: .1rem solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:url(../img/Background.png);
+    background-position-y: center;
+
+}
+
+header .rodape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50%;
+    width: 100%;
+    background: url(../img/Mago\ Cassete.png);
+}
+
+header .rodape .guia {
+    height: 20rem;
+    display: flex;
+    justify-content: space-around;
+    width: 60rem;
+    align-items: end;
+}
+
+header .rodape .guia span{
+    font-size: 2.5rem;
+    font-family: 'FOT-Chiaro Std';
+    font-weight: 800;
+    text-shadow: -.2rem .2rem .2rem rgba(164, 164, 164, 1);
+}
+main {
+    grid-area: main;
+    border: .1rem solid black;
+}
+
+main  .rodape-main {
+    border: .1rem solid black;
+    height: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+main .rodape-main .icon-img {
+    height: 13rem;
+    width: 13rem;
+    background: url(../img/Logo.png);
+    background-size: 15rem;
+    background-position-y: 29.5rem;
+    background-position-x: 13.6rem;
+}
+
+main  .rodape-main .rodape-mid{
+    border: .1rem solid black;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50rem;
+    gap: 5rem;
+}
+
+main .rodape-main .rodape-right{
+    
+}
+
+footer {
+    grid-area: footer;
+    border: .1rem solid black;
+
+}
