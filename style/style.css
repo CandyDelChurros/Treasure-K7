@@ -96,6 +96,7 @@ main .produtos {
     border: .1rem solid black;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 main .produtos .produto {
@@ -116,8 +117,6 @@ main .produtos .produto .produto-img{
     background: url(../img/Bocchi\ T1.avif);
     background-size: cover;
 }
-
-
 
 main .rodape-main .rodape-right{
     display: flex;
