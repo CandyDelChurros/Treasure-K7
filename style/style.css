@@ -31,7 +31,6 @@ header {
     align-items: center;
     background:url(../img/Background.png);
     background-position-y: center;
-
 }
 
 header .rodape {
@@ -42,10 +41,22 @@ header .rodape {
     height: 35rem;
     width: 45rem;
     background: url(../img/Logo.png);
-    background-size: cover;
-    background-position-x: -6rem;
-    background-position-y: center;
+    background-size: 45rem;
     padding-top:50rem ;
+    position: relative;
+}
+
+header .rodape .tittle {
+    position: absolute;
+    top: 35rem;
+    width: 60rem;
+    display: flex;
+    justify-content: center;
+}
+
+header .rodape .tittle span{
+    font-size: 10rem;
+    font-family: 'Grey Qo';
 }
 
 header .rodape .guia {
@@ -57,12 +68,14 @@ header .rodape .guia {
 }
 
 header .rodape .guia span{
+    position: relative;
     font-size: 2.5rem;
     font-family: 'FOT-Chiaro Std';
     text-shadow: -.2rem .2rem .2rem rgba(164, 164, 164, 1);
 }
 main {
     grid-area: main;
+    background: #fdf5f8;
 }
 
 main  .rodape-main {
@@ -77,9 +90,7 @@ main .rodape-main .icon-img {
     height: 13rem;
     width: 13rem;
     background: url(../img/Logo.png);
-    background-size: 15rem;
-    background-position-y: 29.5rem;
-    background-position-x: 13.6rem;
+    background-size: cover;
 }
 
 main  .rodape-main .rodape-mid{
@@ -249,7 +260,7 @@ main .produtos .produto .info span {
 main .produtos .produto .info span s{
     text-decoration:line-through;
     font-size: 1.3rem;
-    color: grey;
+    color: rgb(255, 92, 92);
     margin-right: 1rem;
 }
 main .produtos .produto .info span:nth-child(1) {
@@ -265,7 +276,7 @@ main .produtos .produto .info span:nth-child(3) {
 main .all {
     display: flex;
     justify-content: center;
-    margin-bottom: 10rem;   
+    margin-bottom: 5rem;   
 }
 main .all button {
     border: .2rem solid black;
@@ -297,7 +308,7 @@ main .banners .box {
     justify-content: center;
     align-items: center;
     background: #F9F2B8;
-    
+    margin-bottom: 4rem;
 }
 
 main .banners .box:nth-child(1) {
@@ -322,7 +333,7 @@ main .banners .box span:nth-child(2) {
 }
 main .banners .box span:nth-child() {
     font-size: 3rem;
-    
+
 }
 
 main .banners .box:nth-child(2) span {
@@ -336,6 +347,7 @@ footer {
     justify-content: center; 
     align-items: center;
     flex-direction: column;
+    background: #FFD7E7;
 }
 
 footer .rodape-foot{
@@ -351,6 +363,7 @@ footer .rodape-foot .icon-img {
     background: url(../img/Logo.png);
     background-size: cover;
 }
+
 footer .rodape-foot .contato {
     display: flex;
     justify-content: center;
