@@ -3,10 +3,10 @@
     padding:0;
     margin: 0;
     box-sizing: border-box;
-    text-decoration: none;
     list-style-type: none;
     font-family: "Poppins", sans-serif;
 }
+
 html {
     font-size: 62.5%;
 }
@@ -21,12 +21,11 @@ body {
     "header" 
     "main"
     "footer";
-    grid-template-rows: 80rem 1fr 10rem;
+    grid-template-rows: 80rem 1fr 20rem;
 }
 
 header {
     grid-area: header;
-    border: .1rem solid black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,7 +59,6 @@ header .rodape .guia span{
 }
 main {
     grid-area: main;
-    border: .1rem solid black;
 }
 
 main  .rodape-main {
@@ -68,6 +66,7 @@ main  .rodape-main {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-bottom: 1.5rem;
 }
 
 main .rodape-main .icon-img {
@@ -92,40 +91,213 @@ main  .rodape-main .rodape-mid span{
     font-weight: bold;
 }
 
+main .rodape-main .rodape-right{
+    display: flex;
+    gap: 2rem;
+}
+
 main .produtos {
-    border: .1rem solid black;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 main .produtos .produto {
-    border: .1rem solid purple;
     height: 35rem;
     width: 30rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 6rem;
 }
 
 main .produtos .produto .produto-img{
     margin-top: 1rem;
     height: 25rem;
     width: 25rem;
-    border: .1rem solid black;
+
+}
+main .produtos .produto .produto-img:hover{
+    transition: .65s;
+}
+main .produtos .produto:nth-child(1) .produto-img{
+    border-radius: .5rem;
     background: url(../img/Bocchi\ T1.avif);
     background-size: cover;
 }
 
-main .rodape-main .rodape-right{
-    display: flex;
-    gap: 2rem;
+main .produtos .produto:nth-child(1) .produto-img:hover{
+    background: url(../img/Bocchi\ T2.avif);
+    background-size: cover;
 }
+
+main .produtos .produto:nth-child(2) .produto-img{
+    border-radius: .5rem;
+    background: url(../img/Guardiao\ T1.avif);
+    background-size: cover;
+}
+main .produtos .produto:nth-child(2) .produto-img:hover{
+    background: url(../img/Guardiao\ T2.avif);
+    background-size: cover;
+}
+
+main .produtos .produto:nth-child(3) .produto-img{
+    border-radius: .5rem;
+    background: url(../img/Nana\ T1.avif);
+    background-size: cover;
+}
+main .produtos .produto:nth-child(3) .produto-img:hover{
+    background: url(../img/Nana\ T2.avif);
+    background-size: cover;
+}
+
+main .produtos .produto:nth-child(4) .produto-img{
+    border-radius: .5rem;
+    background: url(../img/Olvia\ T1.avif);
+    background-size: cover;
+}
+main .produtos .produto:nth-child(4) .produto-img:hover{
+    background: url(../img/Olivia\ T2.avif);
+    background-size: cover;
+}
+
+main .produtos .produto:nth-child(5) .produto-img{
+    border-radius: .5rem;
+    background: url(../img/Oshi\ no\ ko\ T1.avif);
+    background-size: cover;
+}
+main .produtos .produto:nth-child(5) .produto-img:hover{
+    background: url(../img/Oshi\ no\ ko\ T2.avif);
+    background-size: cover;
+}
+
+main .produtos .produto:nth-child(6) .produto-img{
+    border-radius: .5rem;
+    background: url(../img/Queen\ T1.avif);
+    background-size: cover;
+}
+main .produtos .produto:nth-child(6) .produto-img:hover{
+    background: url(../img/Queen\ T2.avif);
+    background-size: cover;
+}
+
+main .produtos .produto:nth-child(7) .produto-img{
+    border-radius: .5rem;
+    background: url(../img/Radiohead\ T1.avif);
+    background-size: cover;
+}
+main .produtos .produto:nth-child(7) .produto-img:hover{
+    background: url(../img/Radiohead\ T2.avif);
+    background-size: cover;
+}
+
+main .produtos .produto:nth-child(8) .produto-img{
+    border-radius: .5rem;
+    background: url(../img/SailorWave\ T1.avif);
+    background-size: cover;
+}
+main .produtos .produto:nth-child(8) .produto-img:hover{
+    background: url(../img/SailorWave\ T2.avif);
+    background-size: cover;
+}
+
+main .produtos .produto:nth-child(9) .produto-img{
+    border-radius: .5rem;
+    background: url(../img/Taylor\ T1.avif);
+    background-size: cover;
+}
+main .produtos .produto:nth-child(9) .produto-img:hover{
+    background: url(../img/Taylor\ T2.avif);
+    background-size: cover;
+}
+
+main .produtos .produto:nth-child(10) .produto-img{
+    border-radius: .5rem;
+    background: url(../img/Vaporware\ T1.avif);
+    background-size: cover;
+}
+main .produtos .produto:nth-child(10) .produto-img:hover{
+    background: url(../img/VaporWare\ T2.avif);
+    background-size: cover;
+}
+
+main .produtos .produto:nth-child(11) .produto-img{
+    border-radius: .5rem;
+    background: url(../img/Yoasobi\ T1.avif);
+    background-size: cover;
+}
+main .produtos .produto:nth-child(11) .produto-img:hover{
+    background: url(../img/Yoasobi\ T2.avif);
+    background-size: cover;
+}
+
+main .produtos .produto .info {
+    margin-top: 1rem;
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+}
+
+main .produtos .produto .info span {
+    font-size: 1.8rem;
+}
+main .produtos .produto .info span s{
+    text-decoration:line-through;
+    font-size: 1.3rem;
+    color: grey;
+    margin-right: 1rem;
+}
+main .produtos .produto .info span:nth-child(1) {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+main .produtos .produto .info span:nth-child(3) {
+    font-size: 1.4rem;
+    color: grey;
+}
+
+main .all {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10rem;   
+}
+main .all button {
+    border: .2rem solid black;
+    width: 15rem;
+    height: 5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+main .all button:hover{
+    background: #000;
+    color: #fff;
+    transition: .3s;
+}
+
 
 footer {
     grid-area: footer;
-    border: .1rem solid black;
-    
+    border: .1rem solid blue;   
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+}
 
+footer .rodape-foot{
+    border: .1rem solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+footer .rodape-foot .icon-img {
+    height: 15rem;
+    width: 15rem;
+    background: url(../img/Logo.png);
+    background-size: cover;
+    border: .1rem solid black;   
 }
