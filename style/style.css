@@ -43,7 +43,7 @@ header .rodape {
     background: url(../img/Logo.png);
     background-size: 45rem;
     padding-top:50rem ;
-    position: relative;
+    position: relative; 
 }
 
 header .rodape .tittle {
@@ -57,6 +57,8 @@ header .rodape .tittle {
 header .rodape .tittle span{
     font-size: 10rem;
     font-family: 'Grey Qo';
+    color: #225ac4;
+    font-weight: 600;
 }
 
 header .rodape .guia {
@@ -76,6 +78,7 @@ header .rodape .guia span{
 main {
     grid-area: main;
     background: #fdf5f8;
+    position: relative;
 }
 
 main  .rodape-main {
@@ -307,13 +310,12 @@ main .banners .box {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #F9F2B8;
+    background: #FFDDDD;
     margin-bottom: 4rem;
 }
 
 main .banners .box:nth-child(1) {
-    background:#EBC0AD;
-
+    background:#FACBC0;
 }
 
 main .banners .box span {
