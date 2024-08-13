@@ -1,0 +1,116 @@
+* {
+    border:0;
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    font-family: "Platypi", sans-serif;
+    text-decoration: none;
+    color: #000;
+}
+
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+}
+.container {
+    margin: 0 auto;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "main"
+    "footer";
+    grid-template-rows:1fr 25rem;
+}
+
+main {
+    grid-area: main;
+    background: #fdf5f8;
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+    background: #FFD7E7;
+}
+
+footer .rodape-foot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+
+}
+footer .rodape-foot .icon-img {
+    height: 15rem;
+    width: 15rem;
+    background: url(../img/Logo.png);
+    background-size: cover;
+}
+
+footer .rodape-foot .contato {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.38rem
+}
+footer .rodape-foot .guias {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 4rem;
+    gap: 10rem;
+    font-weight: 500;
+}
+
+footer .rodape-bot {
+    width: 100%; 
+}
+
+footer .rodape-bot .social {
+    display: flex;
+    gap: 2rem;
+    font-size: 2rem;
+    padding-left:8rem;
+}
+
+footer .rodape-bot .pagamentos{
+    display: flex;
+    justify-content: space-around;
+    gap: 9rem;
+}
+
+footer .rodape-bot .pagamentos .pag {
+    width: 15rem;
+    height: 8rem;
+}
+
+footer .rodape-bot .pagamentos .pag:nth-child(1) {
+    background: url(../img/ct1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+footer .rodape-bot .pagamentos .pag:nth-child(2) {
+    background: url(../img/ct2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+footer .rodape-bot .pagamentos .pag:nth-child(3) {
+    background: url(../img/ct3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+footer .rodape-bot .pagamentos .pag:nth-child(4) {
+    background: url(../img/ct4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+footer .rodape-bot .pagamentos .pag:nth-child(5) {
+    background: url(../img/ct5.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
