@@ -88,7 +88,7 @@ main  .rodape-main {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-bottom: 1.5rem;
+    margin-bottom: .5rem;
     background: #fdf5f8b9;
     box-shadow: 0rem .4rem .6rem 0rem #d6b3ff52;
 }
@@ -121,6 +121,228 @@ main .rodape-main .rodape-right{
     font-size: 2.3rem;
 }
 
+main .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main .main .banner{
+    background:url(../img/banner.png);
+    background-size: cover;
+    height: 55rem;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+main .main .cat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+    font-size: 3.8rem;
+    font-weight: 700;
+
+}
+
+main .main .cat .categorias{
+    display: flex;
+    justify-content: space-around;
+    width: 100rem;
+    margin-top: 5rem;
+    font-size: 2rem;
+}
+
+main .main .cat .categorias .box {
+    border-radius: .5rem;
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    font-weight: 900;
+}
+
+main .main .cat .categorias .box:nth-child(1){
+    background: url(../img/b1.webp);
+    background-size: 20rem;
+    background-repeat: no-repeat;
+    background-position-y: 1.5rem;
+
+}
+main .main .cat .categorias .box:nth-child(2){
+    background: url(../img/b2.jpg);
+    background-size: 16rem;
+    background-repeat: no-repeat;
+    background-position-x:center ;
+    background-position-y: 4rem;
+}
+
+main .main .cat .categorias .box:nth-child(3){
+    background: url(../img/b4.avif);
+    background-size: 15rem;
+    background-repeat: no-repeat;
+    background-position-y: 1.8rem;
+    background-position-y: 3rem;
+
+}
+
+main .main .cat .categorias .box:hover {
+    background-color: #FFD7E7;
+    transition: .3s;
+}
+main .main .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 3.8rem;
+    font-weight: 700;
+
+}
+main .main .produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+main .main .produtos .produto {
+    height: 35rem;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main .main .produtos .produto .produto-img{
+    margin-top: 1rem;
+    height: 25rem;
+    width: 25rem;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    color: #225AC4;
+}
+main .main .produtos .produto .produto-img i{
+    visibility: hidden;
+}
+main .main .produtos .produto .produto-img:hover{
+    transition: .65s;
+}
+main .main .produtos .produto .produto-img:hover i{
+    visibility:visible;
+    cursor: pointer;
+}
+main .main .produtos .produto .produto-img i{
+    font-size: 4rem;
+}
+main .main .produtos .produto:nth-child(1) .produto-img{
+    border-radius: .5rem;
+    background: url(../img/Bocchi\ T1.avif);
+    background-size: cover;
+}
+
+main .main .produtos .produto:nth-child(1) .produto-img:hover{
+    background: url(../img/Bocchi\ T2.avif);
+    background-size: cover;
+}
+
+main .main .produtos .produto:nth-child(2) .produto-img{
+    border-radius: .5rem;
+    background: url(../img/Guardiao\ T1.avif);
+    background-size: cover;
+}
+main .main .produtos .produto:nth-child(2) .produto-img:hover{
+    background: url(../img/Guardiao\ T2.avif);
+    background-size: cover;
+}
+
+main .main .produtos .produto:nth-child(3) .produto-img{
+    border-radius: .5rem;
+    background: url(../img/Nana\ T1.avif);
+    background-size: cover;
+}
+main .main .produtos .produto:nth-child(3) .produto-img:hover{
+    background: url(../img/Nana\ T2.avif);
+    background-size: cover;
+    background-position: center;
+
+}
+
+main .main .produtos .produto:nth-child(4) .produto-img{
+    border-radius: .5rem;
+    background: url(../img/Olvia\ T1.avif);
+    background-size: cover;
+}
+main .main .produtos .produto:nth-child(4) .produto-img:hover{
+    background: url(../img/Olivia\ T2.avif);
+    background-size: cover;
+    background-position-x:-2.5rem ;
+}
+
+main .main .produtos .produto .info {
+    margin-top: 1rem;
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+}
+
+main .main .produtos .produto .info span {
+    font-size: 1.8rem;
+}
+main .main .produtos .produto .info span s{
+    text-decoration:line-through;
+    font-size: 1.3rem;
+    color: rgb(255, 92, 92);
+    margin-right: 1rem;
+}
+
+main .main .produtos .produto .info span t{
+    font-size: 1.3rem;
+
+}
+main .main .produtos .produto .info span:nth-child(1) {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+main .main .produtos .produto .info span:nth-child(3) {
+    font-size: 1.4rem;
+    color: grey;
+}
+
+main .main .generos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+main .main .generos .box{
+    border: .1rem solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 5rem;
+    border-radius: .5rem;
+}
+main .main .generos .box:hover span,.box:hover i{
+    color: #FFFF;
+}
+main .main .generos .box:hover{
+    transition: .5s;
+    background: #000;
+}
 footer {
     grid-area: footer;
     display: flex;
